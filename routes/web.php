@@ -47,6 +47,8 @@ $router->group(['prefix' => 'api'], function () use ($router) {
             $router->get('todo-list', 'TodoController@todoList');
 
             $router->post('todo-delete', 'TodoController@deleteTodo');
+
+            $router->get('activity-log', 'LogController@activityLog');
         });
     });
 });
