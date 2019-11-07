@@ -3,19 +3,18 @@
 namespace App;
 
 use Illuminate\Auth\Authenticatable;
-use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;
-use Laravel\Lumen\Auth\Authorizable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
+use Zizaco\Entrust\Traits\EntrustUserTrait;
 
 /**
  * Class User
  * @package App
  */
-class User extends Model implements AuthenticatableContract, AuthorizableContract, JWTSubject
+class User extends Model implements AuthenticatableContract, JWTSubject
 {
-    use Authenticatable, Authorizable;
+    use Authenticatable, EntrustUserTrait;
 
     /**
      * The attributes that are mass assignable.
@@ -55,5 +54,13 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     public function getJWTCustomClaims()
     {
         return [];
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function todo()
+    {
+        return $this->hasMany(Todo::class);
     }
 }

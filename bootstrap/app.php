@@ -21,7 +21,8 @@ $app = new Laravel\Lumen\Application(
     dirname(__DIR__)
 );
 
-$app->withFacades();
+$app->withFacades(true, [Zizaco\Entrust\EntrustFacade::class => 'Entrust',]
+);
 
 $app->withEloquent();
 
@@ -62,6 +63,9 @@ $app->singleton(
 // ]);
 
 $app->routeMiddleware([
+    'role' => \Zizaco\Entrust\Middleware\EntrustRole::class,
+    'permission' => \Zizaco\Entrust\Middleware\EntrustPermission::class,
+    'ability' => \Zizaco\Entrust\Middleware\EntrustAbility::class,
     'auth' => App\Http\Middleware\Authenticate::class,
 ]);
 
@@ -76,10 +80,12 @@ $app->routeMiddleware([
 |
 */
 
-//$app->register(App\Providers\AppServiceProvider::class);
+$app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AuthServiceProvider::class);
 //$app->register(App\Providers\EventServiceProvider::class);
 $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
+$app->register(Zizaco\Entrust\EntrustServiceProvider::class);
+$app->register(Illuminate\Mail\MailServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
@@ -91,6 +97,12 @@ $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 | can respond to, as well as the controllers that may handle them.
 |
 */
+
+$app->configure('permission');
+$app->configure('mail');
+$app->alias('mailer', Illuminate\Mail\Mailer::class);
+$app->alias('mailer', Illuminate\Contracts\Mail\Mailer::class);
+$app->alias('mailer', Illuminate\Contracts\Mail\MailQueue::class);
 
 $app->router->group([
     'namespace' => 'App\Http\Controllers',
