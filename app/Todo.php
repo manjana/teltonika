@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Spatie\Activitylog\Traits\LogsActivity;
 use Zizaco\Entrust\EntrustPermission;
 
 /**
@@ -10,6 +11,10 @@ use Zizaco\Entrust\EntrustPermission;
  */
 class Todo extends Model
 {
+    use LogsActivity;
+
+    protected static $logAttributes = ['*'];
+
     /**
      * @var string
      */

@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Activitylog\Traits\LogsActivity;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Zizaco\Entrust\Traits\EntrustUserTrait;
 
@@ -14,7 +15,9 @@ use Zizaco\Entrust\Traits\EntrustUserTrait;
  */
 class User extends Model implements AuthenticatableContract, JWTSubject
 {
-    use Authenticatable, EntrustUserTrait;
+    use Authenticatable, EntrustUserTrait, LogsActivity;
+
+    protected static $logAttributes = ['*'];
 
     /**
      * The attributes that are mass assignable.

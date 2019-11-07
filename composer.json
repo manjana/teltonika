@@ -10,12 +10,12 @@
   "type": "project",
   "require": {
     "php": "^7.2",
-    "ext-mcrypt": "*",
     "guzzlehttp/guzzle": "^6.4",
     "illuminate/mail": "^5",
     "laravel/lumen-framework": "^5",
     "laravelista/lumen-vendor-publish": "^5",
     "proshore/entrust-lumen": "^1",
+    "spatie/laravel-activitylog": "^3.9",
     "tymon/jwt-auth": "dev-develop"
   },
   "require-dev": {
