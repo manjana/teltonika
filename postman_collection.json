@@ -1,390 +1,432 @@
 {
-  "info": {
-    "_postman_id": "78d1cab5-e218-4c2d-869d-713ee287cd39",
-    "name": "UZDUOTIS",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "http://localhost:8000/api/register",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "name",
-              "value": "Aleksandras",
-              "type": "text"
-            },
-            {
-              "key": "email",
-              "value": "ipsistemos2@gmail.com",
-              "type": "text"
-            },
-            {
-              "key": "password",
-              "value": "123456789",
-              "type": "text"
-            },
-            {
-              "key": "password_confirmation",
-              "value": "123456789",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "http://localhost:8000/api/register",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "register"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/login",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8000/api/login",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "login"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/users/1",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxMjUzMDEsImV4cCI6MTU3MzEyODkwMSwibmJmIjoxNTczMTI1MzAxLCJqdGkiOiI5MkZpbkI0dTRqbHlnTzZkIiwic3ViIjo3LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.5ndIh1wihI7y4z_6o4Q1vdpzLh1JyZ2WlXZ7EQnbXo4",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:8000/api/users/1",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "users",
-            "1"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/users",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxMjYyNjQsImV4cCI6MTU3MzEyOTg2NCwibmJmIjoxNTczMTI2MjY0LCJqdGkiOiJpbXpOSUxxc3NGTm1vb2swIiwic3ViIjo5LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.-GeaEsB7yKkj_0tUNSIXZbGB5ty_TAg9daLTasrVhIQ",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:8000/api/users",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "users"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/profile",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxMjYyNjQsImV4cCI6MTU3MzEyOTg2NCwibmJmIjoxNTczMTI2MjY0LCJqdGkiOiJpbXpOSUxxc3NGTm1vb2swIiwic3ViIjo5LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.-GeaEsB7yKkj_0tUNSIXZbGB5ty_TAg9daLTasrVhIQ",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:8000/api/profile",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "profile"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/remind",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "email",
-              "value": "ipsistemos2@gmail.com",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "http://localhost:8000/api/remind",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "remind"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/password-reset",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "hash",
-              "value": "880b0d7eda6edfb969b90ec3305a5165",
-              "type": "text"
-            },
-            {
-              "key": "password",
-              "value": "456789",
-              "type": "text"
-            },
-            {
-              "key": "password_confirmation",
-              "value": "456789",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "http://localhost:8000/api/password-reset",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "password-reset"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/todo-add",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxMzkxMjYsImV4cCI6MTU3MzE0MjcyNiwibmJmIjoxNTczMTM5MTI2LCJqdGkiOiJjU0lrQWxyM3VBMlBEenlOIiwic3ViIjoyNiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.vBoBgpFsL5ba9utL-nD0IuS5vjQDPan9WZrWDa7Z7P8",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "data",
-              "value": "afwfawfwaaawgwssfsfasfafawf",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "http://localhost:8000/api/todo-add",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "todo-add"
-          ],
-          "query": [
-            {
-              "key": "data",
-              "value": "",
-              "disabled": true
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/todo-update",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxMzI5MDMsImV4cCI6MTU3MzEzNjUwMywibmJmIjoxNTczMTMyOTAzLCJqdGkiOiIybkMzaGk2RnFqcml4cWsyIiwic3ViIjo3LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.ZJeb42gNe3959TnySE3OuNhIROnSK0yGeQz47bzqjzA",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "data",
-              "value": "Lavas",
-              "type": "text"
-            },
-            {
-              "key": "id",
-              "value": "2",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "http://localhost:8000/api/todo-update",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "todo-update"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/todo-list",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxMzQ3OTksImV4cCI6MTU3MzEzODM5OSwibmJmIjoxNTczMTM0Nzk5LCJqdGkiOiJWbWlLc20wcEFDNjNIOXNkIiwic3ViIjo5LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.EeJ-U_7kdeWAsSoBRbwVeaptQvRyADKGKK7DLZ2xY5A",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:8000/api/todo-list",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "todo-list"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/todo-delete",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "name": "Content-Type",
-            "value": "application/x-www-form-urlencoded",
-            "type": "text"
-          },
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxMzQ3OTksImV4cCI6MTU3MzEzODM5OSwibmJmIjoxNTczMTM0Nzk5LCJqdGkiOiJWbWlLc20wcEFDNjNIOXNkIiwic3ViIjo5LCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.EeJ-U_7kdeWAsSoBRbwVeaptQvRyADKGKK7DLZ2xY5A",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "id",
-              "value": "1",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "http://localhost:8000/api/todo-delete",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "todo-delete"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "http://localhost:8000/api/activity-log",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Authorization",
-            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxNDI2NTIsImV4cCI6MTU3MzE0NjI1MiwibmJmIjoxNTczMTQyNjUyLCJqdGkiOiIzVGhIUERockgxYzJ2RHYzIiwic3ViIjoyNiwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.U2avBJh_Dfzp4wmpL5AldnzM3Iws3_cV9I7IQM_PFzE",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:8000/api/activity-log",
-          "protocol": "http",
-          "host": [
-            "localhost:8000"
-          ],
-          "path": [
-            "api",
-            "activity-log"
-          ]
-        }
-      },
-      "response": []
-    }
-  ],
-  "protocolProfileBehavior": {}
+	"info": {
+		"_postman_id": "4c3fc37f-650a-498d-93be-3cc9f1d7a3b3",
+		"name": "UZDUOTIS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Aleksandras",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ipsistemos3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "vartotojas@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://dev.uzduotis.lt/api/login",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"uzduotis",
+						"lt"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/users/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU3MzE5NDgxNiwiZXhwIjoxNTczMTk4NDE2LCJuYmYiOjE1NzMxOTQ4MTYsImp0aSI6ImFrQ2lMb1g5cDNZMzRlSGUiLCJzdWIiOjIsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.uERCuFb9qINi2QbL_dLKHFcoHZXZNbWkJTvCdzfaAI4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU3MzE5MzQ3NiwiZXhwIjoxNTczMTk3MDc2LCJuYmYiOjE1NzMxOTM0NzYsImp0aSI6Ijh0UU1IR0dUVHVMTXpMelEiLCJzdWIiOjEsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.PVTWRQs1OIpO9hD7TKAa56wFu3OJRg3WsInk5pFbHEc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://dev.uzduotis.lt/api/profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9kZXYudXpkdW90aXMubHRcL2FwaVwvbG9naW4iLCJpYXQiOjE1NzMxOTU1MjQsImV4cCI6MTU3MzE5OTEyNCwibmJmIjoxNTczMTk1NTI0LCJqdGkiOiJ3UDAySHkwRmhlZEw1TlpUIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.EoHG2jqKgtP2NJ3wrsg5V7g1phOraBE1IbR3OFF0Kkg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://dev.uzduotis.lt/api/profile",
+					"protocol": "http",
+					"host": [
+						"dev",
+						"uzduotis",
+						"lt"
+					],
+					"path": [
+						"api",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/remind",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "ipsistemos@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/remind?emali=ipsistemos@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"remind"
+					],
+					"query": [
+						{
+							"key": "emali",
+							"value": "ipsistemos@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/password-reset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hash",
+							"value": "e58ff1ffb825d2a840818c5530392fee",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "456789",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/password-reset",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"password-reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/todo-add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU3MzE5NDU2NywiZXhwIjoxNTczMTk4MTY3LCJuYmYiOjE1NzMxOTQ1NjcsImp0aSI6ImZiRnl2NG9mRkRsdkJkWjYiLCJzdWIiOjMsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.FMUgV3tW_d1S8wLFKPZjN6rV-NUMJRqpIxG2QasgKB4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"value": "Manotodo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/todo-add?",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo-add"
+					],
+					"query": [
+						{
+							"key": "data",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/todo-update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU3MzE5NDU2NywiZXhwIjoxNTczMTk4MTY3LCJuYmYiOjE1NzMxOTQ1NjcsImp0aSI6ImZiRnl2NG9mRkRsdkJkWjYiLCJzdWIiOjMsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.FMUgV3tW_d1S8wLFKPZjN6rV-NUMJRqpIxG2QasgKB4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "data",
+							"value": "Mano todo updated",
+							"type": "text"
+						},
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/todo-update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo-update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/todo-list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU3MzE5NDU2NywiZXhwIjoxNTczMTk4MTY3LCJuYmYiOjE1NzMxOTQ1NjcsImp0aSI6ImZiRnl2NG9mRkRsdkJkWjYiLCJzdWIiOjMsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.FMUgV3tW_d1S8wLFKPZjN6rV-NUMJRqpIxG2QasgKB4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/todo-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/todo-delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU3MzE5NDU2NywiZXhwIjoxNTczMTk4MTY3LCJuYmYiOjE1NzMxOTQ1NjcsImp0aSI6ImZiRnl2NG9mRkRsdkJkWjYiLCJzdWIiOjMsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.FMUgV3tW_d1S8wLFKPZjN6rV-NUMJRqpIxG2QasgKB4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/todo-delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todo-delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/activity-log",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9sb2dpbiIsImlhdCI6MTU3MzE5NDU2NywiZXhwIjoxNTczMTk4MTY3LCJuYmYiOjE1NzMxOTQ1NjcsImp0aSI6ImZiRnl2NG9mRkRsdkJkWjYiLCJzdWIiOjMsInBydiI6Ijg3ZTBhZjFlZjlmZDE1ODEyZmRlYzk3MTUzYTE0ZTBiMDQ3NTQ2YWEifQ.FMUgV3tW_d1S8wLFKPZjN6rV-NUMJRqpIxG2QasgKB4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/activity-log",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"activity-log"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
 }

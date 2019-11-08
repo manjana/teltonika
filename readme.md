@@ -28,6 +28,8 @@
     php artisan migrate
     php artisan db:seed
     
+    please change emails in users table to yours
+    
 ## 4. Serve project
 
     go to project root directory and call
